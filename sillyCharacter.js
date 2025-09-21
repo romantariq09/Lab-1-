@@ -19,3 +19,21 @@ function generateRandomCharacter() {
     specialPowers = [powers[Math.floor(Math.random() * powers.length)]];
     updateDescription();
 }
+
+// Functions to update character's age
+function increaseAge() {
+    age++;
+    updateDescription();
+}
+
+function decreaseAge() {
+    if (age > 0) age--;
+    updateDescription();
+}
+
+// Function to update the character's description
+function updateDescription() {
+    const superheroText = isSuperhero ? "superhero" : "ordinary human";
+    const description = `Meet ${characterName}, a ${age}-year-old ${superheroText} who loves ${favoriteFood} and can ${specialPowers[0]}!`;
+    document.getElementById("characterDescription").textContent = description;
+}
