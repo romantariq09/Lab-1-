@@ -37,3 +37,21 @@ function updateDescription() {
     const description = `Meet ${characterName}, a ${age}-year-old ${superheroText} who loves ${favoriteFood} and can ${specialPowers[0]}!`;
     document.getElementById("characterDescription").textContent = description;
 }
+
+// Update name from input
+function updateName() {
+    const newName = document.getElementById("nameInput").value;
+    if (newName.trim() !== "") {
+        characterName = newName;
+        updateDescription();
+    }
+}
+
+// Update age from input
+function updateAge() {
+    const newAge = parseInt(document.getElementById("ageInput").value);
+    if (!isNaN(newAge) && newAge > 0) {
+        age = newAge;
+        updateDescription();
+    }
+}
