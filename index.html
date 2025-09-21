@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Silly Character Customizer</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="sillyCharacter.js" defer></script>
 </head>
 <body>
-    
+    <h1>Silly Character Customizer</h1>
+
+    <!-- Character description -->
+    <p id="characterDescription">Click "Generate Random Character" to see your silly creation!</p>
+
+    <!-- Input fields for customization -->
+    <div>
+        <label for="nameInput">Change Name: </label>
+        <input type="text" id="nameInput" placeholder="Enter new name">
+        <button id="updateNameButton">Update Name</button>
+    </div>
+
+    <div>
+        <label for="ageInput">Change Age: </label>
+        <input type="number" id="ageInput" min="1" max="150" placeholder="Enter new age">
+        <button id="updateAgeButton">Update Age</button>
+    </div>
+
+    <!-- Buttons for generating and changing age -->
+    <div>
+        <button id="generateButton">Generate Random Character</button>
+        <button id="increaseAgeButton">Increase Age</button>
+        <button id="decreaseAgeButton">Decrease Age</button>
+    </div>
+
 </body>
 </html>
