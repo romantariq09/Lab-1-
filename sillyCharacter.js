@@ -55,3 +55,10 @@ function updateAge() {
         updateDescription();
     }
 }
+
+// Add event listeners
+document.getElementById("generateButton").addEventListener("click", generateRandomCharacter);
+document.getElementById("increaseAgeButton").addEventListener("click", increaseAge);
+document.getElementById("decreaseAgeButton").addEventListener("click", decreaseAge);
+document.getElementById("updateNameButton").addEventListener("click", updateName);
+document.getElementById("updateAgeButton").addEventListener("click", updateAge)
